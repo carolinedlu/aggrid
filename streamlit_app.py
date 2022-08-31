@@ -11,4 +11,4 @@ def exp_list():
     st.session_state['exp_list'] = ['2001','2002','2003']
 
 first_sb = st.selectbox('please select an option', options= ['option1'], key ='first_sb', on_change=exp_list)
-second_sb = st.selectbox('please select a year', options= st.session_state['exp_list'], key ='second_sb')
+second_sb = st.selectbox('please select a year', options= ['option1','option2'], key ='second_sb')
