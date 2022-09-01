@@ -14,4 +14,5 @@ def on_change():
 first_sb = st.selectbox('please select an option', options= ['option1'], key ='first_sb', on_change=on_change)
 second_sb = st.selectbox('please select a year', options= ['option1','option2'], key ='second_sb')
 
-st.write(first_sb)
+if first_sb:
+    st.write(first_sb)
