@@ -7,9 +7,9 @@ from st_aggrid import AgGrid
 # new_df = grid_return['data']
 
 
-def exp_list():
+def on_change():
 #     st.session_state['exp_list'] = ['2001','2002','2003']
     st.write("on change function called")
 
-first_sb = st.selectbox('please select an option', options= ['option1'], key ='first_sb', on_change=exp_list)
+first_sb = st.selectbox('please select an option', options= ['option1'], key ='first_sb', on_change=on_change)
 second_sb = st.selectbox('please select a year', options= ['option1','option2'], key ='second_sb')
